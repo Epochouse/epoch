@@ -59,7 +59,7 @@ const ServiceDetail = () => {
         },
       ],
       image:
-        "https://res.cloudinary.com/dts134dyc/image/upload/v1729168571/Photoroom-20241017_130149_2_fkdvnp.webp",
+        "https://res.cloudinary.com/dts134dyc/image/upload/v1729171209/WhatsApp_Image_2024-10-17_at_14.13.02_6094d813_cb1zvw.jpg",
       icon: null,
     },
     "show-production": {

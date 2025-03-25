@@ -18,7 +18,7 @@ const CreativeDirector = () => {
             onMouseLeave={() => setIsHovered(false)}
           >
             <img
-              src="https://res.cloudinary.com/dts134dyc/image/upload/v1742582139/creative-director_x3dmfa.jpg"
+              src="https://res.cloudinary.com/dts134dyc/image/upload/v1742907223/3D9A5920_1_llhakx.jpg"
               alt="Itunu Joe"
               className={`w-full aspect-[3/4] object-cover transition-transform duration-700 ${
                 isHovered ? "scale-105" : "scale-100"
