@@ -157,7 +157,11 @@ const Footer = () => {
                   className="text-studio-gold flex-shrink-0 mt-1"
                 />
                 <span className="text-gray-400">
-                  123 Music Street, Studio City, LA 90210
+                  The Epoch House, Tipper Garage Road, Tanke,
+                  <br />
+                  beside Olalyeye Event Center, Ilorin 240103,
+                  <br />
+                  Kwara State, Nigeria
                 </span>
               </li>
               <li className="flex items-center space-x-3">
