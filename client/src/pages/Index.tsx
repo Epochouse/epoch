@@ -19,6 +19,7 @@ import CreativeDirector from "@/components/CreativeDirector";
 import ServiceCarousel from "@/components/ServiceCarousel";
 import YouTubeVideo from "@/components/YouTubeVideo";
 import { Helmet } from "react-helmet";
+import SpotifyEmbed from "@/components/SpotifyEmbed";
 
 const Index = () => {
   const servicesRef = useRef<HTMLDivElement>(null);
@@ -33,8 +34,7 @@ const Index = () => {
       id: "1",
       title: "Ambient Dreams",
       artist: "Epochouse Productions",
-      audioUrl:
-        "https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3",
+      audioUrl: "7d1tK1JLVfmFLlETSXgxlu",
       coverUrl:
         "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     },
@@ -186,7 +186,7 @@ const Index = () => {
             {/* Audio Sample */}
             <div className="glass-panel dark:glass-panel-dark rounded-xl p-4">
               <h3 className="text-xl font-bold mb-4">Audio</h3>
-              <AudioPlayer tracks={sampleTracks} />
+              <SpotifyEmbed tracks={sampleTracks} />
             </div>
           </div>
 

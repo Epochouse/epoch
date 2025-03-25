@@ -22,7 +22,7 @@ const SpotifyEmbed = ({ tracks }: SpotifyEmbedProps) => {
         <iframe
           src={`https://open.spotify.com/embed/track/${track.audioUrl}?utm_source=generator`}
           width="100%"
-          height="352"
+          height="250"
           allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
           loading="lazy"
           className="rounded-lg"
