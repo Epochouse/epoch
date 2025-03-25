@@ -70,7 +70,7 @@ const Hero = () => {
           playsInline
         >
           <source
-            src="https://res.cloudinary.com/dts134dyc/video/upload/v1742604382/videoplayback_otd4rt.mp4"
+            src="https://res.cloudinary.com/dts134dyc/video/upload/v1742905342/EPOCH_HOUSE_PRO_DISPLAY_VID_wpj2g6.mov"
             type="video/mp4"
           />
           Your browser does not support the video tag.
