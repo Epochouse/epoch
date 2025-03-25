@@ -89,8 +89,7 @@ const Hero = () => {
           ref={subheadingRef}
           className="mt-6 text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto opacity-0 text-balance"
         >
-          Professional Music Production & Recording Studio in the Heart of the
-          City
+          Professional Music Production Services
         </p>
 
         <div

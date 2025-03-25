@@ -300,7 +300,7 @@ const ServiceDetail = () => {
         },
       ],
       image:
-        "https://res.cloudinary.com/dts134dyc/image/upload/v1742903189/IMG_3117_eomvtf.jpg",
+        "https://res.cloudinary.com/dts134dyc/image/upload/v1742903190/IMG_3115_ouuzdo.jpg",
       icon: null,
     },
   };
