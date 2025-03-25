@@ -116,4 +116,24 @@ export const servicesData: ServiceData[] = [
       "Mastering for streaming and radio",
     ],
   },
+  {
+    title: "Remote Broadcast",
+    description:
+      "Seamlessly stream live events, shows, or performances with crystal-clear audio and video from any location. Our remote broadcasting service ensures professional-quality production, engaging your audience in real time.",
+    icon: Headphones,
+    className: "h-6 w-6",
+    image:
+      "https://res.cloudinary.com/dts134dyc/image/upload/v1742903189/IMG_3117_eomvtf.jpg",
+    slug: "remote-broadcasting",
+    features: [
+      "High-definition audio and video streaming",
+      "Real-time audio mixing and mastering",
+      "Professional broadcast-level sound quality",
+      "Remote collaboration with multiple hosts or guests",
+      "Support for live music, podcasts, and events",
+      "Reliable low-latency streaming solutions",
+      "Multi-platform distribution (YouTube, Facebook, Twitch, etc.)",
+      "Custom overlays and real-time graphics integration",
+    ],
+  },
 ];

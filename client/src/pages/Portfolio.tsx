@@ -2,11 +2,12 @@ import { useState, useEffect, useRef } from "react";
 import { PlayCircle, Star, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import AudioPlayer from "@/components/AudioPlayer";
+// import AudioPlayer from "@/components/AudioPlayer";
 import YouTubeVideo from "@/components/YouTubeVideo";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import SpotifyEmbed from "@/components/SpotifyEmbed";
 
 interface Project {
   id: string;
@@ -82,7 +83,7 @@ const PortfolioItem = ({ project }: { project: Project }) => {
             ))}
           </div>
         </div>
-        <AudioPlayer
+        <SpotifyEmbed
           tracks={[
             {
               id: project.id,
@@ -93,6 +94,17 @@ const PortfolioItem = ({ project }: { project: Project }) => {
             },
           ]}
         />
+        {/* <AudioPlayer
+          tracks={[
+            {
+              id: project.id,
+              title: project.title,
+              artist: project.artist,
+              audioUrl: project.audioUrl,
+              coverUrl: project.coverUrl,
+            },
+          ]}
+        /> */}
       </div>
     </div>
   );
@@ -144,8 +156,7 @@ const Portfolio = () => {
       description:
         "A vibrant summer anthem with catchy hooks and bright instrumentation.",
       services: ["Production", "Mixing", "Mastering"],
-      audioUrl:
-        "https://assets.mixkit.co/music/preview/mixkit-tech-house-vibes-130.mp3",
+      audioUrl: "5Tqrqjtw5hAxnSIivFJrvC",
       coverUrl:
         "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       featured: true,

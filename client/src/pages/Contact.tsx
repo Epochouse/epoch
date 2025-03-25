@@ -4,6 +4,7 @@ import ContactForm from "@/components/ContactForm";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import Youtube from "../assets/youtube.svg";
 
 const Contact = () => {
   return (
@@ -44,9 +45,11 @@ const Contact = () => {
                       Studio Location
                     </h3>
                     <p className="text-gray-300">
-                      123 Music Avenue, Harmony District
+                      The Epoch House, Tipper Garage Road, Tanke,
                       <br />
-                      Los Angeles, CA 90001
+                      beside Olalyeye Event Center, Ilorin 240103,
+                      <br />
+                      Kwara State, Nigeria
                     </p>
                   </div>
                 </div>
@@ -57,11 +60,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-white">
                       Operating Hours
                     </h3>
-                    <p className="text-gray-300">
-                      Monday - Saturday: 9am - 6pm
-                      <br />
-                      Sundays:Closed
-                    </p>
+                    <p className="text-gray-300">Monday - Sundays: 24 hours</p>
                   </div>
                 </div>
 
@@ -70,6 +69,7 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-white">Phone</h3>
                     <p className="text-gray-300">+234 803 623 7544</p>
+                    <p className="text-gray-300">+234 701 265 8557</p>
                   </div>
                 </div>
 
@@ -77,7 +77,7 @@ const Contact = () => {
                   <Mail className="w-5 h-5 text-studio-gold mr-3 mt-1" />
                   <div>
                     <h3 className="font-semibold text-white">Email</h3>
-                    <p className="text-gray-300">epochouse@gmail.com</p>
+                    <p className="text-gray-300">epochousestudios@gmail.com</p>
                   </div>
                 </div>
               </div>
@@ -86,7 +86,7 @@ const Contact = () => {
                 <h3 className="font-semibold text-white mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="#"
+                    href="https://www.instagram.com/the_epochouse?igsh=MXQ3cHBxemUwbDJndA=="
                     className="text-gray-400 hover:text-white transition-colors"
                   >
                     <svg
@@ -106,16 +106,9 @@ const Contact = () => {
                     href="#"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    <svg
-                      className="w-6 h-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
-                    </svg>
+                    <img src={Youtube} alt="youtube-icon" className="w-6 h-6" />
                   </a>
-                  <a
+                  {/* <a
                     href="#"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
@@ -148,7 +141,7 @@ const Contact = () => {
                         clipRule="evenodd"
                       />
                     </svg>
-                  </a>
+                  </a> */}
                 </div>
               </div>
             </div>
@@ -163,7 +156,7 @@ const Contact = () => {
 
           <div className="mb-20 rounded-xl overflow-hidden h-[400px] border border-gray-800">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d423286.27405770525!2d-118.69192047471653!3d34.02016130653294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2sLos%20Angeles%2C%20CA%2C%20USA!5e0!3m2!1sen!2sng!4v1679929043848!5m2!1sen!2sng"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.019342055174!2d4.6180381752186355!3d8.497499697081803!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10364d11e26c2a93%3A0x10c6b28197813b89!2sThe%20Epoch%20House!5e0!3m2!1sen!2sng!4v1742904910229!5m2!1sen!2sng"
               width="100%"
               height="100%"
               style={{ border: 0 }}
