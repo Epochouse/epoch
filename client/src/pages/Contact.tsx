@@ -4,7 +4,6 @@ import ContactForm from "@/components/ContactForm";
 import { MapPin, Clock, Phone, Mail } from "lucide-react";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Youtube from "../assets/youtube.svg";
 
 const Contact = () => {
   return (
@@ -106,7 +105,11 @@ const Contact = () => {
                     href="#"
                     className="text-gray-400 hover:text-white transition-colors"
                   >
-                    <img src={Youtube} alt="youtube-icon" className="w-6 h-6" />
+                    <img
+                      src="../assets/Youtube.svg"
+                      alt="youtube-icon"
+                      className="w-6 h-6"
+                    />
                   </a>
                   {/* <a
                     href="#"
