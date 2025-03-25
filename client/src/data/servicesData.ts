@@ -119,12 +119,12 @@ export const servicesData: ServiceData[] = [
   {
     title: "Remote Broadcast",
     description:
-      "Seamlessly stream live events, shows, or performances with crystal-clear audio and video from any location. Our remote broadcasting service ensures professional-quality production, engaging your audience in real time.",
+      "Seamlessly stream live events, shows, or performances with crystal-clear audio and video from any location.",
     icon: Headphones,
     className: "h-6 w-6",
     image:
       "https://res.cloudinary.com/dts134dyc/image/upload/v1742903190/IMG_3115_ouuzdo.jpg",
-    slug: "remote-broadcasting",
+    slug: "remote-broadcast",
     features: [
       "High-definition audio and video streaming",
       "Real-time audio mixing and mastering",

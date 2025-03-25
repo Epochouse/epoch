@@ -11,13 +11,9 @@ import SpotifyEmbed from "@/components/SpotifyEmbed";
 
 interface Project {
   id: string;
-  title: string;
-  artist: string;
   genre: string;
-  description: string;
   services: string[];
   audioUrl: string;
-  coverUrl: string;
   featured?: boolean;
 }
 
@@ -40,36 +36,7 @@ const PortfolioItem = ({ project }: { project: Project }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative aspect-square overflow-hidden">
-        <img
-          src={project.coverUrl}
-          alt={project.title}
-          className={`w-full h-full object-cover transition-transform duration-700 ${
-            isHovered ? "scale-105" : "scale-100"
-          }`}
-        />
-        <div className="absolute inset-0 bg-black/50 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-          <PlayCircle className="w-16 h-16 text-white" />
-        </div>
-        {project.featured && (
-          <div className="absolute top-4 left-4 bg-studio-blue text-white text-xs font-medium px-2.5 py-1 rounded-full flex items-center">
-            <Star className="w-3 h-3 mr-1" /> Featured
-          </div>
-        )}
-      </div>
       <div className="p-6">
-        <div className="flex justify-between items-start mb-2">
-          <div>
-            <h3 className="font-bold text-xl">{project.title}</h3>
-            <p className="text-gray-600 dark:text-gray-400">{project.artist}</p>
-          </div>
-          <span className="text-xs font-medium bg-gray-100 dark:bg-gray-800 py-1 px-2 rounded">
-            {project.genre}
-          </span>
-        </div>
-        <p className="text-gray-600 dark:text-gray-300 mb-4 text-pretty">
-          {project.description}
-        </p>
         <div className="mb-4">
           <p className="text-sm font-medium mb-2">Services:</p>
           <div className="flex flex-wrap gap-2">
@@ -87,10 +54,7 @@ const PortfolioItem = ({ project }: { project: Project }) => {
           tracks={[
             {
               id: project.id,
-              title: project.title,
-              artist: project.artist,
               audioUrl: project.audioUrl,
-              coverUrl: project.coverUrl,
             },
           ]}
         />
@@ -150,82 +114,46 @@ const Portfolio = () => {
   const projects: Project[] = [
     {
       id: "1",
-      title: "Summer Vibes",
-      artist: "Coastal Dreams",
-      genre: "Pop",
-      description:
-        "A vibrant summer anthem with catchy hooks and bright instrumentation.",
+      genre: "Gospel",
       services: ["Production", "Mixing", "Mastering"],
-      audioUrl: "5Tqrqjtw5hAxnSIivFJrvC",
-      coverUrl:
-        "https://images.unsplash.com/photo-1614613535308-eb5fbd3d2c17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      audioUrl: "3k1zwory6KDYlniS9aCDl2",
       featured: true,
     },
+
     {
       id: "2",
-      title: "Urban Rhythm",
-      artist: "Beat Masters",
-      genre: "Hip Hop",
-      description:
-        "Hard-hitting beats with innovative sound design and powerful bass.",
+      genre: "Gospel",
       services: ["Beat Production", "Mixing", "Recording"],
-      audioUrl:
-        "https://assets.mixkit.co/music/preview/mixkit-hip-hop-02-621.mp3",
-      coverUrl:
-        "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    },
-    {
-      id: "3",
-      title: "Midnight Jazz",
-      artist: "The Quintet",
-      genre: "Jazz",
-      description:
-        "Smooth jazz improvisation recorded live in our main studio space.",
-      services: ["Recording", "Mixing", "Session Musicians"],
-      audioUrl:
-        "https://assets.mixkit.co/music/preview/mixkit-jazzy-nights-114.mp3",
-      coverUrl:
-        "https://images.unsplash.com/photo-1415201364774-f6f0bb35f28f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-    },
-    {
-      id: "4",
-      title: "Electric Dreams",
-      artist: "Synth Collective",
-      genre: "Electronic",
-      description:
-        "Atmospheric electronic production with innovative sound design.",
-      services: ["Production", "Sound Design", "Mastering"],
-      audioUrl:
-        "https://assets.mixkit.co/music/preview/mixkit-deep-urban-623.mp3",
-      coverUrl:
-        "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      audioUrl: "03uKZRESVz1N7Nf2eFsOBi",
       featured: true,
     },
+
+    {
+      id: "3",
+      genre: "Gospel",
+      services: ["Recording", "Mixing", "Session Musicians"],
+      audioUrl: "7d1tK1JLVfmFLlETSXgxlu",
+    },
+
+    {
+      id: "4",
+      genre: "Gospel",
+      services: ["Production", "Sound Design", "Mastering"],
+      audioUrl: "6ag2zPVMCFpOZtV2BlsZ3c",
+    },
+
     {
       id: "5",
-      title: "Acoustic Sessions",
-      artist: "Emily Rose",
-      genre: "Folk",
-      description:
-        "Intimate acoustic performance highlighting vocal and guitar dynamics.",
+      genre: "Gospel",
       services: ["Recording", "Mixing", "Session Musicians"],
-      audioUrl:
-        "https://assets.mixkit.co/music/preview/mixkit-serene-view-443.mp3",
-      coverUrl:
-        "https://images.unsplash.com/photo-1511379938547-c1f69419868d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      audioUrl: "3zqbBAK6WlP2L5jCORs3As",
     },
+
     {
       id: "6",
-      title: "Rock Anthem",
-      artist: "The Amplifiers",
-      genre: "Rock",
-      description:
-        "High-energy rock production with powerful drums and layered guitars.",
+      genre: "Gospel",
       services: ["Recording", "Production", "Mixing"],
-      audioUrl:
-        "https://assets.mixkit.co/music/preview/mixkit-driving-ambition-32.mp3",
-      coverUrl:
-        "https://images.unsplash.com/photo-1501612780327-45045538702b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      audioUrl: "1Tu1c4NnJLYFaDb5gaITHt",
     },
   ];
 

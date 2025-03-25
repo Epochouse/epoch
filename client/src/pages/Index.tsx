@@ -152,56 +152,6 @@ const Index = () => {
       </section>
 
       {/* Studio Images Section */}
-      <section
-        ref={studioImagesRef}
-        className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto opacity-0"
-      >
-        <div className="text-center mb-16">
-          <div className="flex justify-center">
-            <span className="px-3 py-1 text-xs font-medium bg-studio-gold/10 text-studio-gold rounded-full mb-4">
-              Our Facilities
-            </span>
-          </div>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Take a Tour of Our Studio
-          </h2>
-          <p className="text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-pretty">
-            Explore our professional recording spaces designed with cutting-edge
-            technology and acoustic perfection.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {studioImages.map((image, index) => (
-            <div
-              key={image.id}
-              className="group relative overflow-hidden rounded-xl shadow-lg aspect-video"
-              style={{ animationDelay: `${index * 100}ms` }}
-            >
-              <img
-                src={image.url}
-                alt={image.title}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-                <h3 className="text-xl font-bold text-white mb-2">
-                  {image.title}
-                </h3>
-                <p className="text-gray-200">{image.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="text-center mt-10">
-          <Link
-            to="/contact"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-md bg-studio-gold text-white hover:bg-studio-gold-dark transition duration-300 shadow-sm hover:shadow-glow"
-          >
-            Schedule a Studio Tour
-          </Link>
-        </div>
-      </section>
 
       <section
         ref={portfolioRef}
@@ -226,7 +176,7 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* YouTube Video */}
             <div className="glass-panel dark:glass-panel-dark rounded-xl p-4">
-              <h3 className="text-xl font-bold mb-4">Recent Production</h3>
+              <h3 className="text-xl font-bold mb-4">Video</h3>
               <YouTubeVideo
                 videoId="mPhbiSKcWMs?si=jT__Vb4VrhPPipGL"
                 title="Studio Recording Session"
@@ -235,7 +185,7 @@ const Index = () => {
 
             {/* Audio Sample */}
             <div className="glass-panel dark:glass-panel-dark rounded-xl p-4">
-              <h3 className="text-xl font-bold mb-4">Featured Track</h3>
+              <h3 className="text-xl font-bold mb-4">Audio</h3>
               <AudioPlayer tracks={sampleTracks} />
             </div>
           </div>
