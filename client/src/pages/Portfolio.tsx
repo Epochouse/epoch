@@ -191,7 +191,7 @@ const Portfolio = () => {
     },
     {
       id: "v4",
-      videoId: "aY3_JPEF6bs?si=MhPTe3Mm6tnwEYQ-", // Uptown Funk as an example
+      videoId: "aY3_JPEF6bs?si=MhPTe3Mm6tnwEYQ-",
       title: "BORIS CHOIR PERFORMANCE",
       artist: "The Epoch House",
       genre: "Folk",
@@ -216,6 +216,56 @@ const Portfolio = () => {
       artist: "The Epoch House",
       genre: "Various",
       description: "Highlights from our recording performances.",
+      featured: true,
+    },
+    // New Videos
+    {
+      id: "v7",
+      videoId: "HyWrj18TalE?si=-0vd1ElRAOQBb53N",
+      title: "New Song Release - Official Music Video",
+      artist: "Epoch House",
+      genre: "Soul",
+      description:
+        "An emotional performance capturing the essence of the song.",
+      featured: false,
+    },
+    {
+      id: "v8",
+      videoId: "pAXjBdy4Ilk",
+      title: "Live Performance - Acoustic Session",
+      artist: "Epoch House",
+      genre: "Acoustic",
+      description: "An intimate live performance with acoustic instrumentals.",
+      featured: true,
+    },
+    {
+      id: "v9",
+      videoId: "NDdyuH0kjYw",
+      title: "Behind the Scenes - Studio Session",
+      artist: "Epoch House",
+      genre: "Documentary",
+      description:
+        "A behind-the-scenes look at the making of our latest track.",
+      featured: false,
+    },
+    {
+      id: "v10",
+      videoId: "UkjXaixlcJs",
+      title: "Choir Rehearsal Highlights",
+      artist: "Epoch House",
+      genre: "Gospel",
+      description:
+        "A powerful rehearsal session with the Epoch House Choir in preparation for their live performance.",
+      featured: true,
+    },
+    {
+      id: "v11",
+      videoId: "0m7jSabbRRw",
+      title: "Exclusive Music Video Premiere",
+      artist: "Epoch House",
+      genre: "Pop",
+      description:
+        "Watch the exclusive premiere of our latest music video with vibrant visuals and storytelling.",
       featured: true,
     },
   ];
