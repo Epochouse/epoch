@@ -262,6 +262,47 @@ const ServiceDetail = () => {
         "https://res.cloudinary.com/dts134dyc/image/upload/v1731867975/Rectangle_280-min_ojg9et.jpg",
       icon: null,
     },
+    "remote-broadcast": {
+      slug: "remote-broadcast",
+      title: "Remote Broadcast",
+      description:
+        "Deliver professional-quality live broadcasts from any location with our remote broadcast services.",
+      longDescription:
+        "Our remote broadcast service offers seamless, high-quality live streaming for events, podcasts, interviews, and performances. Using cutting-edge technology, we ensure your content reaches your audience with crystal-clear audio and video, no matter where you are.",
+      features: [
+        "HD video and audio streaming",
+        "Low-latency real-time broadcasting",
+        "Multi-platform streaming support",
+        "Remote production management",
+        "Live audience engagement tools",
+        "Reliable and scalable solutions",
+      ],
+      process: [
+        {
+          title: "Consultation",
+          description:
+            "We discuss your broadcast goals, technical needs, and desired platforms to ensure seamless delivery.",
+        },
+        {
+          title: "Setup & Configuration",
+          description:
+            "Our team configures the necessary equipment, software, and network for optimal live streaming.",
+        },
+        {
+          title: "Live Broadcast",
+          description:
+            "We manage your remote broadcast in real-time, providing support for smooth, uninterrupted streaming.",
+        },
+        {
+          title: "Post-Event Support",
+          description:
+            "Receive high-quality recordings of your broadcast, analytics reports, and additional editing if required.",
+        },
+      ],
+      image:
+        "https://res.cloudinary.com/dts134dyc/image/upload/v1742903189/IMG_3117_eomvtf.jpg",
+      icon: null,
+    },
   };
 
   const service = servicesData[slug || ""];
